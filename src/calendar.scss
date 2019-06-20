@@ -32,8 +32,9 @@
       display: flex;
       .day-cell{
         flex:1;
-        min-height: 112px;
+        min-height: 121px;
         padding:4px;
+        box-sizing: border-box;
         border-right:1px solid #e0e0e0;
         border-bottom:1px solid #e0e0e0;
         .day-number{
@@ -60,7 +61,8 @@
         .events-day{
           cursor: pointer;
           flex:1;
-          min-height: 112px;
+          min-height: 121px;
+          box-sizing: border-box;
           overflow: hidden;
           text-overflow: ellipsis;
           .day-number{

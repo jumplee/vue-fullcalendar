@@ -5,8 +5,8 @@ module.exports = {
   devtool: 'source-map',
 	entry:'./demo/main.js',
 	output:{
-		path:path.resolve(__dirname, 'static'),
-    publichPath : '/static/',
+		path:path.resolve(__dirname, 'demo/static'),
+        publichPath : '/static/',
 		filename:'bundle.js'
 	},
 	plugins : [
@@ -31,13 +31,17 @@ module.exports = {
       {
         test:/\.vue$/,
         loader:'vue'
-      },{
-        test:/\.scss$/,
-        loader:'style!css!sass'
       },
       {
-        test:/\.css$/,
-        loader:'style!css'
+        test:/\.[s]*css$/,
+        use: [
+          'vue-style-loader',
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 }
+          },
+          'postcss-loader'
+        ]
       }
     ]
   },

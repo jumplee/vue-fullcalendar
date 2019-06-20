@@ -94,7 +94,7 @@
       },
       locale : {
         type : String,
-        default : 'en'
+        default : 'zh-cn'
       },
       firstDay : {
         type : Number | String,
@@ -242,5 +242,5 @@
   }
   
 </script>
-<style lang="scss" src="./calendar.scss">
+<style src="./calendar.scss">
 </style>

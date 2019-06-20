@@ -14,7 +14,7 @@ var stripLoader = {
  loader: WebpackStripLoader.loader('console.log')
 }
 devConfig.module.loaders.push(stripLoader);
-devConfig.entry = './src/index.js'
+devConfig.entry = './src/fullCalendar.vue'
 devConfig.output = {
   path:'./dist',
   filename:'vue-fullcalendar.js',
