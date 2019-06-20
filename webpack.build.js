@@ -5,7 +5,7 @@ var version = process.env.VERSION || require('./package.json').version
 
 var banner =
   'vue-fullcalendar v' + version + '\n' +
-  '(c) ' + new Date().getFullYear() + ' Sunny Wang <sunnywang0104@163.com> \n' +
+  '(c) ' + new Date().getFullYear() +
   '@license MIT'
 
 var stripLoader = {

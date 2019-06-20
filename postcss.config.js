@@ -1,5 +1,8 @@
 module.exports = {
     plugins: [
-        require('precss')
+        require('precss'),
+        require('cssnano')({
+            preset: 'default',
+        }),
     ]
 }
